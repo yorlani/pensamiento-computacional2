@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ejercicio_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string descripcion;
+            double costo;
+            double precioventas;
+            double costofinal;
+            Console.WriteLine("Ingrese la descripcion del articulo");
+            descripcion = Console.ReadLine();
+            Console.WriteLine("Ingrese el costo");
+            costo = double.Parse(Console.ReadLine());
+            precioventas = (costo * 120) / 100 + (costo * 15) / 100;
+            costofinal = costo + precioventas;
+            Console.WriteLine("el costo final es de ", +costofinal);
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
